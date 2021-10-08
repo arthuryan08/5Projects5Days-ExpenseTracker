@@ -64,7 +64,7 @@ export const InputArea = ({ onAdd }: Props) => {
           <>
             <option></option>
             {categoryKeys.map((key, index) => (
-              <option key={index}>{categories[key].title}</option>
+              <option key={index} value={key}>{categories[key].title}</option>
             ))}
           </>
         </C.Select>
